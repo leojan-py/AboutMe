@@ -3,31 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact | Leo Jan Sugian</title>
+
+    <meta name="description" content="Contact Leo Jan Sugian through email or the contact form to send a message and get in touch.">
+
+    <link rel="canonical" href="https://leojan-py.github.io/AboutMe/contact.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact | Leo Jan Sugian">
+    <meta property="og:description" content="Contact Leo Jan Sugian through email or the contact form to send a message and get in touch.">
+    <meta property="og:image" content="https://leojan-py.github.io/AboutMe/assets/hero-md.jpg">
+    <meta property="og:url" content="https://leojan-py.github.io/AboutMe/contact.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
 </head>
+
 <body>
     <header>
-    <h1>Leo Jan Sugian</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+        <h1>Leo Jan Sugian</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-  <main>
-    <article>
-        <h2>Contact Me</h2>
-    </article>
-    <address>
-        <a href="mailto:ljsugian1@gmail.com"><p>Email me!</p></a>
-    </address>
-  </main>
-  <footer>
-    <p>&copy; 2026 Leo Jan Sugian</p>
-  </footer>
 
+    <main>
+        <article>
+            <h2>Contact Me</h2>
 
+            <address>
+                <p>
+                    Email me:
+                    <a href="mailto:ljsugian1@gmail.com">
+                        ljsugian1@gmail.com
+                    </a>
+                </p>
+            </address>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Contact Me</legend>
+
+                    <p>
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            minlength="2">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone (optional)</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9\-\s]{7,}">
+                    </p>
+
+                    <p>
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="referral">
+                            How did you hear about me?
+                        </label>
+
+                        <select id="referral" name="referral">
+                            <option value="google">Google</option>
+                            <option value="social-media">Social Media</option>
+                            <option value="friend">Friend</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="agreement"
+                                required>
+                            I agree to be contacted.
+                        </label>
+                    </p>
+
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Leo Jan Sugian</p>
+    </footer>
 </body>
 </html>

@@ -3,34 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Home | Leo Jan Sugian</title>
+
+    <meta name="description" content="Welcome to Leo Jan Sugian's personal website featuring information about me, my interests, and ways to contact me.">
+
+    <link rel="canonical" href="https://leojan-py.github.io/AboutMe/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Home | Leo Jan Sugian">
+    <meta property="og:description" content="Welcome to Leo Jan Sugian's personal website featuring information about me, my interests, and ways to contact me.">
+    <meta property="og:image" content="https://leojan-py.github.io/AboutMe/assets/hero-md.jpg">
+    <meta property="og:url" content="https://leojan-py.github.io/AboutMe/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- JSON-LD Person Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Leo Jan Sugian",
+        "url": "https://leojan-py.github.io/AboutMe/",
+        "image": "https://leojan-py.github.io/AboutMe/assets/avatar.jpg",
+        "description": "Leo Jan Sugian's personal website."
+    }
+    </script>
 </head>
+
 <body>
     <header>
-    <h1>Leo Jan Sugian</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+        <h1>Leo Jan Sugian</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-  <main>
-    <article>
-      <h2>Welcome</h2>
-      <figure>
-      <img src="avatar.jpg" alt="an alternative avatar.">
-      <figcaption>Leo Jan Sugian</figcaption>
-      </figure>
 
-      <p><p>This website is all about me, take time to read. Thank you!</p></p>
-    </article>
-  </main>
-  <footer>
-    <p>&copy; 2026 Leo Jan Sugian</p>
-  </footer>
+    <main>
+        <article>
+            <h2>Welcome</h2>
 
+            <figure>
+                <img
+                    src="assets/avatar.jpg"
+                    alt="Avatar representing Leo Jan Sugian.">
+                <figcaption>Leo Jan Sugian</figcaption>
+            </figure>
 
+            <p>
+                This website is all about me. Take some time to explore
+                and learn more. Thank you for visiting!
+            </p>
+        </article>
+
+        <picture>
+            <source
+                type="image/webp"
+                srcset="
+                    assets/hero-sm.webp 400w,
+                    assets/hero-md.webp 800w,
+                    assets/hero-lg.webp 1600w"
+                sizes="(max-width: 600px) 90vw, 800px">
+
+            <img
+                src="assets/hero-md.jpg"
+                alt="A personal hero image representing Leo Jan Sugian."
+                width="800"
+                height="450"
+                loading="lazy">
+        </picture>
+
+        <section>
+            <h2>My Video</h2>
+
+            <video
+                controls
+                poster="assets/poster.jpg"
+                preload="metadata">
+
+                <source
+                    src="assets/video.mp4"
+                    type="video/mp4">
+
+                <track
+                    src="assets/captions.vtt"
+                    kind="captions"
+                    srclang="en"
+                    label="English"
+                    default>
+
+                Your browser does not support the video element.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Leo Jan Sugian</p>
+    </footer>
 </body>
 </html>
